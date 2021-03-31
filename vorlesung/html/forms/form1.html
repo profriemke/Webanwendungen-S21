@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Titledd</title>
+</head>
+<body>
+
+<form action="meineseite.php" method="post">
+    <fieldset>
+        <legend>Ihre Brieftasche</legend>
+    <label for="plz">Postleitzahl</label>
+    <input type="text" name="plz" placeholder="Ihre Postleitzahl" id="plz">
+
+    <br>
+    <label for="ort">Ort</label>
+    <input type="text" name="ort" value="Bitte Ort eingeben" id="ort">
+    <br>
+    <label for="notiz">Ihre Notiz</label>
+    <textarea name="notiz" cols="40" rows="15" id="notiz">Hier meine Notiz</textarea>
+    <br>
+    <label for="studiengang">Ihr Studiengang</label>
+    <select name="studiengang" id="studiengang">
+        <option value="OM7">OMM</option>
+        <option value="WI7">WI</option>
+    </select>
+        <!-- Kommentar -->
+    <br>
+
+        <input type="radio" name="semester" value="1" id="erstes">
+        <label for="erstes">1. Semester</label><br>
+        <input type="radio" name="semester" value="2" id="zweites">
+        <label for="zweites">2. Semester</label>
+        <br>
+
+            <input type="range" name="zufriedenheit" value="100">
+
+        <br>
+        <input type="color" name="color" id="color">
+     <button type="submit">Adresse updaten</button>
+    </fieldset>
+</form>
+
+</body>
+</html>
