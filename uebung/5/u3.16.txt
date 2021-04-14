@@ -1,0 +1,2 @@
+INSERT INTO baeume (art,ort, alter) VALUES (?,?,?)
+array(htmlspecialchars($_POST["art"]), htmlspecialchars($_POST["ort"]),htmlspecialchars( $_POST["alter"]))
