@@ -12,7 +12,7 @@ require("./includes/db.php");
     $statement = $pdo->prepare("SELECT * FROM baum");
     if($statement->execute()){
        while($row=$statement->fetch()){
-           echo $row["id"]." ".$row["name"]." ".$row["latein"]." ".$row["hoehe"]."<a href='edit.php?id=".$row["id"]."'>Edit</a><br>";
+           echo $row["id"]." ".$row["name"]." ".$row["latein"]." ".$row["hoehe"]."<a href='edit.php?id=".$row["id"]."'> Edit</a><a href='delete.php?id=".$row["id"]."'> Delete</a><br>";
        }
     }else{
         die("Datenbank-Fehler");
