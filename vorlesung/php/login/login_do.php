@@ -15,13 +15,14 @@ $statement->bindParam(":login", $_POST["login"]);
 if($statement->execute()){
     if($row = $statement->fetch()){
         // Datensatz vorhanden
-        if($row["password"]==$_POST["password"]){
+        if(password_verify($_POST["password"],$row["password"])){
+        // if($row["password"]==$_POST["password"]){
             // Passwort ok
             echo "Herzlich Willkommen, ".$row["login"];
             $_SESSION["login"]=$row["login"];
         } else{
             // Passwort falsch
-            echo "Passwort falsch";
+            die("Passwort falsch");
         }
     }else{
         // User existiert nicht
