@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style type="text/css">
+    #box{
+      width:100px;
+      height:100px;
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+<div id="box"></div>
+<button onclick="addText()">Text rein!</button>
+<button onclick="removeText()">Text weg!</button>
+<button onclick="makeGreen()">grün!</button>
+<script>
+  function addText() {
+    var elm = document.getElementById('box')
+    elm.innerHTML = "Hallo HdM"
+    console.log('addText aufgerufen')
+  }
+  function removeText() {
+    var elm = document.getElementById('box')
+    elm.innerHTML = ""
+  }
+  function makeGreen() {
+    var elm = document.getElementById('box')
+    elm.style.background = "green"
+    elm.style.height="200px"
+  }
+</script>
+</body>
+</html>

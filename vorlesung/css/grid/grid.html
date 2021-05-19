@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style type="text/css">
+    body {
+      margin: 0px;
+      padding: 0px;
+    }
+    div {
+      display: grid;
+      grid-template-columns: 1fr 2fr 2fr 2fr;
+      grid-template-rows: 2fr 5fr 1fr;
+      min-height: 100vh;
+      min-width: 100vw;
+    }
+    header{
+      background-color: gold;
+      grid-row: 1;
+      grid-column: 1 / span 4;
+    }
+    nav{
+      background-color: deeppink;
+      grid-row: 2;
+      grid-column: 1 / span 1;
+    }
+    main{
+      background-color: greenyellow;
+      grid-row: 2;
+      grid-column: 2 / span 3;
+    }
+    footer{
+      background-color: dodgerblue;
+      grid-row: 3;
+      grid-column: 1 / span 4;
+    }
+
+  </style>
+</head>
+<body>
+  <div>
+      <header>Ich bin der Header</header>
+      <nav>ich bin die navi</nav>
+      <main>Ich bin der Inhalt</main>
+      <footer>Ich bin ein Fuß</footer>
+  </div>
+</body>
+</html>
