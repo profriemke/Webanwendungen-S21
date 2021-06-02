@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Drop-Down-Menü</title>
+    <style>
+        .drop {
+            display: inline-block;
+            background-color: #eae9e9;
+            width: 200px;
+            font-size: 1.3em;
+            padding-left: 5px;
+        }
+        .drop-content {
+            display: none;
+            background-color: #eae9e9;
+            padding-top: 10px;
+            width: 200px;
+            z-index: 1;
+        }
+        .drop:hover .drop-content {
+            display: block;
+            width: 200px;
+        }
+        .drop-item:hover{
+            background-color: #bab9b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="drop">
+        <div class="drop-header">Hover mich</div>
+        <div class="drop-content">
+           <div class="drop-item">Haste gemacht!</div>
+           <div class="drop-item">Laut gelacht!</div>
+        </div>
+    </div>
+
+</body>
+</html>

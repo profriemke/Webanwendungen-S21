@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style type="text/css">
+    .drop {
+      display: inline-block;
+      background-color: #e24a14;
+      width: 200px;
+      padding-left: 5px;
+      float: left;
+    }
+    .drop-content{
+      display: none;
+    }
+    .drop:hover .drop-content{
+      display: block;
+    }
+    .drop-item:hover{
+      background-color: #e88b70;
+    }
+  </style>
+</head>
+<body>
+<div class="drop">
+  <div class="drop-header">Über</div>
+  <div class="drop-content">
+    <div class="drop-item">Meins</div>
+    <div class="drop-item">Deins</div>
+  </div>
+</div>
+<div class="drop">
+    <div class="drop-header">Bearbeiten</div>
+    <div class="drop-content">
+        <div class="drop-item">Kopieren</div>
+        <div class="drop-item">Einfügen</div>
+    </div>
+</div>
+</body>
+</html>
