@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+  <style type="text/css">
+    #red{
+      width: 100px;
+      height: 100px;
+      background-color: red;
+    }
+    #green{
+      width: 100px;
+      height: 100px;
+    background-color: green;
+    }
+  </style>
+</head>
+<body>
+
+<div id="red"></div>
+<div id="green" style="display: none"></div>
+
+<button>magic</button>
+<script>
+$('button').click(function() {
+$('div').toggle();
+});
+
+</script>
+
+</body>
+</html>

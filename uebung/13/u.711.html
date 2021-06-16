@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <style type="text/css">
+    div {
+      width: 100px;
+      height: 100px;
+    }
+    #box1{
+      background-color: green;
+    }
+    #box2{
+      background-color: red;
+    }
+
+  </style>
+</head>
+<body>
+<div><div id="box1"></div></div>
+<div><div id="box2"></div></div>
+<button onclick="$('#box1').toggle(); $('#box2').toggle()">Magic!</button>
+
+<script>
+  $('#box1').toggle();
+</script>
+
+</body>
+</html>
