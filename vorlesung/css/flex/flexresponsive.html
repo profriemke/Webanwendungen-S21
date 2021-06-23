@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta name="viewport" content="width=device-width">
+  <style type="text/css">
+    .navi{
+      list-style: none;
+      display: flex;
+      height: 40px;
+
+      background-color: #e88b70;
+    }
+    .navi a{
+      text-decoration: none;
+      width: 100px;
+      height: 30px;
+      display: block;
+      padding: 5px;
+      color: white;
+      font-family: Gargi;
+    }
+    .navi a:hover{
+      background-color: #e04f24;
+      height: 30px;
+    }
+    @media screen and (min-width: 801px){
+    .navi{
+      justify-content:flex-start ;
+    }
+
+    }
+
+    @media screen and (max-width: 800px){
+    .navi{
+      flex-direction: column;
+      background-color: white;
+    }
+      .navi a{
+        text-decoration: none;
+        width: 90%;
+        height: 40px;
+        display: block;
+        padding: 5px;
+        margin: 5px;
+        color: white;
+        font-family: Gargi;
+        background-color: #e88b70;
+        font-size: 1.5em;
+      }
+      .navi a:hover{
+        background-color: #e04f24;
+        height: 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+<ul class="navi">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">zweiter</a></li>
+  <li><a href="#">dritter</a></li>
+  <li><a href="#">vierter</a></li>
+</ul>
+</body>
+</html>
