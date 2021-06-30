@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+<h1>Mein Büro</h1>
+<div id="temp"></div><br>
+<div id="co2"></div><br>
+<div id="date"></div><br>
+<button id="load">Laden ...</button>
+<script>
+  $('#load').click(function (){
+    $.getJSON('https://c.lehrspace.de/2.0/env', function(result){
+    console.log(result)
+      $('#temp').html(result.temp+" C")
+      $('#co2').html(result.co2+" ppm")
+      $('#date').html(result.date+ ' '+result.time)
+    })
+
+  })
+</script>
+</body>
+</html>
